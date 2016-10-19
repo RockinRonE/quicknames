@@ -1,0 +1,32 @@
+home-page {
+    ion-item-sliding {
+        margin-top: 5px; 
+    }
+
+    .home-item {
+        font-size: 1.2em; 
+        font-weight: bold; 
+        color: #282828; 
+        padding-top: 10px; 
+        padding-bottom: 10px;
+    }
+
+    .secondary-detail { 
+        display: block; 
+        color: #cecece; 
+        font-weight: 400; 
+        margin-top: 10px;
+    }
+
+    ion-content {
+        background-color: #32db64 !important;
+    }
+
+    .logo {
+        max-height: 39px;
+    }
+
+    button {
+        border: none !important;
+    }
+}
