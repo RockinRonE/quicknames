@@ -4,21 +4,21 @@ export class ChecklistModel {
     checklist: any;
     checklistObserver: any; 
 
-    constructor(public title: string, public items: any[], public notes: string) {
+
+    constructor(public title: string, public items: any[]) {
         this.items = items; 
-        this.notes = notes; 
 
         this.checklist = Observable.create(observer => {
             this.checklistObserver = observer; 
         });
     }
 
-    addItem(item, notes): void {
+    addItem(item): void {
         this.items.push({
             title: item,
-            notes: notes,
             checked: false
         });
+        
         this.checklistObserver.next(true);
     }
 

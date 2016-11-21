@@ -7,11 +7,11 @@ export class Data {
 
   }
 
-  getChecklistData(): Promise<any> {
+  getData(): Promise<any> {
     return this.storage.get('checklists');
   }
 
-  saveChecklist(data): void {
+  save(data): void {
     let saveData = [];
 
     //Remove observables
